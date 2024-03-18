@@ -9,11 +9,6 @@ if (!file.exists(datafile))
   download.file(fileURL, datafile)
   }  
 
-## Checking if folder exists
-if (!file.exists("UCI HAR Dataset")) { 
-  unzip(datafile) 
-}
-
 # Load package
 library(dplyr)
 
